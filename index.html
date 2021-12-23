@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.css">
+    <!-- 字体图标 -->
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_3005413_mx54z1xad9.css">
+    <!-- 轮播图插件 -->
+    <link rel="stylesheet" href="./swiper.css">
+    <!-- 按钮插件 -->
+    <link rel="stylesheet" href="./button.css">
+    <!-- 样式 -->
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index-A.css">
+</head>
+
+<body id="A">
+    <!-- 头部 -->
+    <header>
+        <div class="yl_header page">
+            <div class="headerLeft">
+                <img src="./images/logo.png" alt="">
+                <div class="software">
+                    <p>明德软件</p>
+                    <span>mingdesoftware</span>
+                </div>
+            </div>
+            <div class="headerRight">
+                <input type="button" value="请登录" class="button button-3d button-primary button-rounded" id="inputBtn">
+                <div class="circle">
+                    <img src="./images/1.jpeg" alt="">
+                </div>
+                <div class="yl_more">
+                    <i class="iconfont icon-gengduo"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav>
+        <ul class="yl_nav flex_c_a page">
+            <li style="background-color: #333;"><a href="#A">主页</a></li>
+            <li><a href="#B">服务</a></li>
+            <li><a href="#C">信息</a></li>
+            <li><a href="#D">教室</a></li>
+            <li><a href="#E">课程</a></li>
+            <li><a href="#G">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <!-- Swiper -->
+    <div class="swiperBox">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/weblunbotu_01.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/weblunbotu_01.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/weblunbotu_01.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/weblunbotu_01.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div>
+    <!-- 登录界面 -->
+    <div class="yl_login yl_entry">
+        <div class="close">
+            <i class="iconfont icon-cha"></i>
+        </div>
+        <p>登录</p>
+        <div class="userInput">
+            <span class="span">
+                    <i class="iconfont icon-yonghu"></i>
+                </span>
+            <input type="text" placeholder="请输入用户名" id="userName" autocomplete="off">
+        </div>
+        <div class="userInput">
+            <span class="span">
+                    <i class="iconfont icon-mima2"></i>
+                </span>
+            <input type="password" placeholder="请输入密码" id="userPassword">
+            <i class="iconfont icon-yanjing03 eyes commonEyes eyesClose"></i>
+            <i class="iconfont icon-yanjing eyes commonEyes eyesOpen"></i>
+        </div>
+
+        <div class="btnBox flex_c_a">
+            <button id="enrollBtn" class="button button-3d button-action button-pill"><span>注册</span></button>
+            <button id="entryBtn" class="button button-3d button-action button-pill"><span>登录</span></button>
+        </div>
+
+        <div class="loginWrap">
+            <div class="top">
+                <span class="spirit">每日一碗毒鸡汤</span>
+                <span class="check">查看默认账号密码</span>
+            </div>
+            <div class="main">
+                <div>默认账号:account</div>
+                <div>默认密码:123456</div>
+                <span></span>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 注册界面 -->
+    <div class="yl_login yl_enroll">
+        <i class="iconfont icon-fanhui1 return"></i>
+        <i class="iconfont icon-cha close"></i>
+        <p>注册</p>
+        <div class="userInput">
+            <span class="span">
+                    <i class="iconfont icon-yonghu"></i>
+                </span>
+            <input type="text" placeholder="请输入用户名" autocomplete="off">
+        </div>
+        <div class="userInput">
+            <span class="span">
+                    <i class="iconfont icon-mima2"></i>
+                </span>
+            <input type="password" placeholder="请输入密码" id="enrollPassword">
+            <i class="iconfont icon-yanjing03 eyes1 commonEyes eyesClose1"></i>
+            <i class="iconfont icon-yanjing eyes1 commonEyes eyesOpen1"></i>
+        </div>
+        <div class="userInput">
+            <span class="span">
+                    <i class="iconfont icon-mima2"></i>
+                </span>
+            <input type="password" placeholder="请确认密码" id="againPassword">
+            <i class="iconfont icon-yanjing03 eyes2 commonEyes eyesClose2"></i>
+            <i class="iconfont icon-yanjing eyes2 commonEyes eyesOpen2"></i>
+        </div>
+        <div class="userInput proving">
+            <span class="span">
+                    <i class="iconfont icon-mima2"></i>
+                </span>
+            <input type="text" placeholder="请输入验证码">
+            <span class="validation">
+                    <i class="proving"></i>
+                </span>
+        </div>
+
+        <div class="btnBox flex_c_a " style="margin-top: 0.8rem;">
+            <button class="button button-3d button-action button-pill"><span>确认注册</span></button>
+        </div>
+
+    </div>
+
+    <!-- 遮盖 -->
+    <div class="yl_cover"></div>
+
+    <!-- 弹出层 -->
+    <div class="yl_alert">
+        <p>
+            <i class="iconfont icon-warning"></i>
+        </p>
+        <div class="title">
+            是否退出登录
+        </div>
+        <div class="alertBtn flex_c_a">
+            <button class="button button-3d button-caution" id="cancel">取消</button>
+            <button class="button button-3d button-royal" id="confirm">确认</button>
+        </div>
+    </div>
+
+
+
+    <div id="body">
+        <div class="servicesBox" id="B">
+            <section class="rc-services container">
+                <h3 class="rc-textCenter">我们的服务</h3>
+                <p class="rc-character">居住环境，教室设施，日常活动</p>
+                <div class="rc-container">
+                    <div class="rc-topLeft col-lg-6 col-md-6 col-sm-6">
+                        <div class="rc-details">
+                            <div class="rc-img">
+                                <img class="rc-img1" data-src="./images/groupPhoto.jpg" alt="">
+                            </div>
+                            <div class="rc-text">
+                                <div class="rc-textSild">
+                                    <h4>◆ 校 内 住 宿</h4>
+                                    <p>Accommodation on campus</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="rc-servDetails p1">
+                            <p>
+                                因为大多数学生都住校，所以学生在校的住宿质量尤其关键。学校宿舍设施完善，温馨舒适。宿舍安排由学校统一管理，同时考虑每位学生的个人需要。生活老师管理宿舍的各项事务，教导学生自理独立，尊重他人。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rc-topLeft col-lg-6 col-md-6 col-sm-6">
+                        <div class="rc-details">
+                            <div class="rc-img">
+                                <img class="rc-img2" data-src="./images/classroom2.jpg" alt="">
+                            </div>
+                            <div class="rc-text">
+                                <div class="rc-textSild">
+                                    <h4>◆ 教 室 设 施</h4>
+                                    <p>Classroom facilities</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rc-servDetails p2">
+                            <p>
+                                学校提供电脑各种设备，一应俱全，教室安装空调等设备，教室宽敞明亮，努力为学生创作一个良好的学习环境
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rc-topLeft col-lg-6 col-md-6 col-sm-6">
+                        <div class="rc-details">
+                            <div class="rc-img">
+                                <img class="rc-img3" data-src="./images/classroom3.jpg" alt="">
+                            </div>
+                            <div class="rc-text">
+                                <div class="rc-textSild">
+                                    <h4>◆ 日 常 餐 食</h4>
+                                    <p>Daily meals</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rc-servDetails p3">
+                            <p>
+                                学校请专业的餐饮企业提供健康卫生的中西式餐点，以满足不同学生的饮食习惯，并使学生逐步适应西方食物。学校每日供应早、午、晚三餐。学生自助选餐，按需取量。菜单每月更新，一周内没有重复的菜品。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rc-topLeft col-lg-6 col-md-6 col-sm-6">
+                        <div class="rc-details">
+                            <div class="rc-img">
+                                <img class="rc-img4" data-src="./images/classroom4.jpg" alt="">
+                            </div>
+                            <div class="rc-text">
+                                <div class="rc-textSild">
+                                    <h4>◆ 安 全 管 理</h4>
+                                    <p>security management</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rc-servDetails p4">
+                            <p>
+                                通过智慧校园管理系统，来确保学生们在校期间的安全不出现问题，严格管理各类出入校园的人员，规章明确、执行有力。学生在非正常时间离校需跟家长确认后，持班主任及学生处签字的《离校证明》方可离校。校园内安装有全方位监控设备，并保持夜间巡查，以确保校园安全无死角。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="lp-box" id="C">
+            <div class="container">
+                <h3 class="lp-slideanim">我们的信息</h3>
+                <p class="lp-slideanims">深圳市明德软件培训基地位于龙华新区观澜街道观光路1301号银星高科技工业园银星科技大厦</p>
+                <div class="lp-container">
+                    <div class="lp-row">
+                        <div class="lp-left col-lg-5 col-md-5 col-sm-5">
+                            <h4 class="lp-title">银星科技大厦基本信息</h4>
+                            <p class="lp-text">银星科技大厦附近交通便利，基础设施完善，功能配套齐全，拥有共享专业实训教室、 校企合作实训基地、会议室、图书室等以及创客咖啡、活动室等。 在银星科技大厦周边，还要许多活动场所，比如乒乓球场、篮球场、网球场等各种休闲场所， 并且还有许多美食，供各位选择。
+                            </p>
+                            <p class="lp-text">明德软件培训基地不仅与各大高校密切合作，致力于为学生打造升学平台，还与相关企 业达成校企合作协议，为学生提供实习基地、就业平台。</p>
+                        </div>
+                        <div class="lp-right col-lg-7 col-md-7 col-sm-7">
+                            <img class="lp-picture" id="lp-picture" data-src="./images/yinxing.png" alt="">
+                        </div>
+                    </div>
+                    <div class="lp-underpicture">
+                        <div class="lp-imgCnt col-lg-3 col-md-6 col-sm-6">
+                            <img class="lp-photo" data-src="./images/coffee.png  " alt="">
+                        </div>
+                        <div class="lp-imgCnt col-lg-3 col-md-6 col-sm-6">
+                            <img class="lp-photo" data-src="./images/foodCourt2.png" alt="">
+                        </div>
+                        <div class="lp-imgCnt col-lg-3 col-md-6 col-sm-6">
+                            <img class="lp-photo" data-src="./images/basketball.png" alt="">
+                        </div>
+                        <div class="lp-imgCnt col-lg-3 col-md-6 col-sm-6">
+                            <img class="lp-photo" data-src="./images/pingpong.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="hj-our-gallery" id="D">
+            <div class="container">
+                <div class="row">
+                    <div class="hj-text-center">
+                        <h3 class="hj-text">我们的教室</h3>
+                        <p>教学环境，活动设备等...</p>
+                    </div>
+                    <div class="hj-img-container">
+                        <div class="hj-content col-lg-3 col-md-3 col-sm-6">
+                            <img data-src="./images/classroom1.jpg" alt="">
+                            <div class="hj-cover">
+                                <p>Click</p>
+                            </div>
+                        </div>
+                        <div class="hj-content col-lg-3 col-md-3 col-sm-6">
+                            <img data-src="./images/classroom2.jpg" alt="">
+                            <div class="hj-cover">
+                                <p>Click</p>
+                            </div>
+                        </div>
+                        <div class="hj-content col-lg-3 col-md-3 col-sm-6">
+                            <img data-src="./images/classroom3.jpg" alt="">
+                            <div class="hj-cover">
+                                <p>Click</p>
+                            </div>
+                        </div>
+                        <div class="hj-content col-lg-3 col-md-3 col-sm-6">
+                            <img data-src="./images/classroom4.jpg" alt="">
+                            <div class="hj-cover">
+                                <p>Click</p>
+                            </div>
+                        </div>
+                        <div class="hj-content col-lg-3 col-md-3 col-sm-6">
+                            <img data-src="./images/classroom5.jpg" alt="">
+                            <div class="hj-cover">
+                                <p>Click</p>
+                            </div>
+                        </div>
+                        <div class="hj-content col-lg-3 col-md-3 col-sm-6">
+                            <img data-src="./images/classroom6.jpg" alt="">
+                            <div class="hj-cover">
+                                <p>Click</p>
+                            </div>
+                        </div>
+                        <div class="hj-content col-lg-3 col-md-3 col-sm-6">
+                            <img data-src="./images/classroom7.png" alt="">
+                            <div class="hj-cover">
+                                <p>Click</p>
+                            </div>
+                        </div>
+                        <div class="hj-content col-lg-3 col-md-3 col-sm-6">
+                            <img data-src="./images/coffee.png" alt="">
+                            <div class="hj-cover">
+                                <p>Click</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hj-screen">
+                        <div class="hj-bgcover"></div>
+                        <div class="hj-wrap">
+                            <div class="hj-contents"></div>
+                            <div class="hj-btns">
+                                <div style="padding: 10px;">
+                                    <span class="number"></span>/8
+                                </div>
+                                <div>
+                                    <button class="hj-btn icon_left"><i class="iconfont icon-left"></i></button>
+                                    <button class="hj-btn icon_right"><i class="iconfont icon-zuoyoujiantou"></i></button>
+                                    <button class="hj-btn icon_amplify"><i class="iconfont icon-fangda1"></i></button>
+                                    <button class="hj-btn icon_close"><i class="iconfont icon-cha"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="core" id="E">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="batten" style="padding: 0 15px;">
+                        <div class="head">
+                            <h1 class="mingshijianjie">名师简介</h1>
+                            <p>以软件开发培训为主体，开设web前端、全栈工程师、软件测试等专业课程</p>
+                        </div>
+                        <div class="substance">
+                            <!-- <div class="introduce"> -->
+                            <div class="narrate docent col-lg-5 col-md-5 col-sm-5">
+                                <div class="docentImg">
+                                    <img data-src="./images/tx2.webp" alt="">
+                                </div>
+                                <div class="version">
+                                    <p><b>姓名：</b>周述琦</p>
+                                    <p><b>现任职务：</b>校长</p>
+                                    <p><b>毕业学校：</b>江汉大学</p>
+                                    <p><b class="versionText">工作职责：</b>作为学校的负责人，负责课程设计和开发，教学运营与质量管控，内部流程管理，并负责学员招生与学生就业。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-1"></div>
+                            <div class="narrate docent col-lg-5 col-md-5 col-sm-5">
+                                <div class="docentImg"><img data-src="./images/tx2.webp" alt=""></div>
+                                <div class="version">
+                                    <p><b>姓名：</b>汪玮</p>
+                                    <p><b>现任职务：</b>高级软件讲师</p>
+                                    <p><b>毕业学校：</b>江西省景德镇陶瓷大学</p>
+                                    <p><b class="versionText">工作职责：</b>负责Html5、Css3、框架项目等前端课程基础、数据分析等课程设计和教学。</p>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                            <!-- <div class="introduce-one"> -->
+                            <div class="narrate docent col-lg-5 col-md-5 col-sm-5">
+                                <div class="docentImg"><img data-src="./images/tx.webp" alt=""></div>
+                                <div class="version">
+                                    <p><b>姓名：</b>彭鹏</p>
+                                    <p><b>现任职务：</b>UI讲师</p>
+                                    <p><b>毕业学校：</b>湖北科技学院</p>
+                                    <p><b class="versionText">工作职责：</b>负责UI数据库课程的教学。</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                            <div class="narrate docent col-lg-5 col-md-5 col-sm-5">
+                                <div class="docentImg"><img data-src="./images/tx.webp" alt=""></div>
+                                <div class="version">
+                                    <p><b>姓名：</b>张有琳</p>
+                                    <p><b>现任职务：</b>教学总监</p>
+                                    <p><b>毕业学校：</b>桂林航空学院</p>
+                                    <p><b class="versionText">工作职责：</b>负责教学课程设计和开发，教学运营与质量管控。</p>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="G">
+            <section class="zy-contacts" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <h3 class="zy-text-center zy-slideanim zy-slide">联系我们</h3>
+                        <p class="zy-text-center1 zy-slideanim zy-slide">Web前端全栈 应运而生 前景光明
+                        </p>
+                        <div class="zy-container">
+                            <div class="zy-row">
+                                <div class="zy-col-lg-12">
+                                    <form role="form" class="zy-form">
+                                        <div class="zy-row" id="zy-row">
+                                            <div class="zy-form-group zy-col-lg-4 zy-slideanim zy-slide zy-row-div col-lg-4 col-md-4 col-sm-4">
+                                                <input type="text" class="zy-form-control zy-user-name zy-input" placeholder=" 您的名字" required>
+                                            </div>
+                                            <div class="zy-form-group zy-col-lg-4 zy-slideanim zy-slide zy-row-div col-lg-4 col-md-4 col-sm-4">
+                                                <input type="email" class="zy-form-control zy-mail zy-input" placeholder="您的邮箱" required>
+                                            </div>
+                                            <div class="zy-form-group zy-col-lg-4 zy-slideanim zy-slide zy-row-div col-lg-4 col-md-4 col-sm-4">
+                                                <input type="tel" class="zy-form-control zy-pno zy-input" placeholder="您的电话号码" required>
+                                            </div>
+                                            <div class="zy-clearfix"></div>
+                                            <div class="zy-form-group zy-col-lg-12 zy-slideanim zy-slide">
+                                                <textarea class="zy-form-control zy-textarea zy-input" rows="6" placeholder="感谢您的反馈" required></textarea>
+                                            </div>
+                                            <div class="zy-form-group zy-col-lg-12 zy-slideanim zy-slide">
+                                                <button type="submit" href="Javascript:;" class="zy-btn-outline1 zy-button">点击提交</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="zy-footer">
+                <h2 class="zy-text-center zy-h2">谢谢您来拜访我们</h2>
+                <hr class="zy-hr">
+                <div class="container">
+                    <div class="row">
+                        <div class="zy-container">
+                            <div class="zy-row">
+                                <div class="zy-col-lg-4 zy-footer-left col-lg-4 col-md-4 col-sm-4">
+                                    <h4 class="zy-h4">联系方式</h4>
+                                    <div class="zy-contact-info">
+                                        <div class="zy-address">
+                                            <p class="zy-p3">深圳市龙华区观澜街道新澜社区观光路1301号银星科技大厦C1102-1 </p>
+                                        </div>
+                                        <div class="zy-phone">
+                                            <p class="zy-p4">+ 0755-33235678</p>
+                                        </div>
+                                        <div class="zy-email-info">
+                                            <p class="zy-p4"><a class="zy-a" href="mailto:email2@example.com">13750422927@139.com</a>
+                                            </p>
+                                        </div>
+                                        <div class="zy-ewm" style="display: flex;">
+                                            <div style="width: 80px; margin-top: 10px; font-size: 12px;text-align: center; margin-right: 12px;">
+                                                <img data-src="./images/erweima.png" alt="" style="width: 100%;">
+                                                <b>扫码添加微信</b>
+                                            </div>
+                                            <div style="width: 80px; margin-top: 10px; font-size: 12px;text-align: center;">
+                                                <img data-src="./images/ewm2.jpg" alt="" style="width: 100%;">
+                                                <b>尽掌新资讯</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zy-col-lg-4 zy-footer-center col-lg-4 col-md-4 col-sm-4">
+                                    <h4 class="zy-h4">业务通讯</h4>
+                                    <p class="zy-p">注册到我们的时事通讯，并更新有关我们的服务，提供更多的信息.</p>
+                                    <form class="zy-form-horizontal zy-form" role="form">
+                                        <div class="zy-form-group zy-div">
+                                            <label for="zy-inputEmail1" class="zy-col-lg-4 zy-control-label"></label>
+                                            <div class="zy-col-lg-10">
+                                                <input type="email" class="zy-form-control zy-frame" id="zy-inputEmail1" placeholder="您的邮箱" required>
+                                            </div>
+                                        </div>
+                                        <div class="zy-form-group zy-div">
+                                            <label for="zy-text1" class="zy-col-lg-4 zy-control-label"></label>
+                                            <div class="zy-col-lg-10">
+                                                <input type="text" class="zy-form-control zy-frame" id="zy-text1" placeholder="姓名" required>
+                                            </div>
+                                        </div>
+                                        <div class="zy-form-group zy-div">
+                                            <div class="zy-col-lg-10">
+                                                <button type="submit" class="zy-btn-outline">提交</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- form -->
+                                </div>
+                                <div class="zy-col-lg-4 zy-footer-right col-lg-4 col-md-4 col-sm-4">
+                                    <h4 class="zy-h4">支持我们</h4>
+                                    <p class="zy-p">
+                                        前端开发从网页制作演变而来，名称上有很明显的时代特征。前端技术一般分为前端设计和前端开发，前端设计一般可以理解为网站的视觉设计，前端开发则是网站的前台代码实现，包括基本的HTML和CSS以及JavaScript/ajax，最新的高级版本HTML5、CSS3，以及SVG等。 前端的发展是互联网自身发展的一个缩影。前端开发主要职能就是把网站的界面更好地呈现给用户。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="zy-hr">
+                <div class="zy-copyright">
+                    <div class="container">
+                        <div class="row">
+                            <p class="zy-p1">版权所有：©2020。深圳市明德软件科技有限公司<a class="zy-a1" target="_blank" href="https://aiqicha.baidu.com/company_detail_34407237990347">https://aiqicha.baidu.com/company_detail_34407237990347</a>
+                            </p>
+                            <p style="color: #ccc; margin: 0;">本页面由以下人员共同完成 排名不分先后：@陈浩杰、@陈柔纯、@王子豪、@陈玉林、@郑紫茵、@李艇欣、@郑丽苹
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+</body>
+<script src="./jQuery.js"></script>
+<script src="./swiper.js"></script>
+<script src="./scrollreveal.js"></script>
+<script src="./bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+<script src="./index.js"></script>
+<script src="./index-A.js"></script>
+<script>
+    let lazyImg = document.querySelectorAll('#body img');
+
+
+    // IntersectionObserver 观察一个元素是否在视窗可见  observe()开始观察   unobserve()取消观察   disconnect() 关闭观察器
+    let callback = entries => {
+        // 循环观察所有图片
+        entries.forEach(entry => {
+            console.log(entry);
+            if (entry.isIntersecting) {
+                let img = entry.target;
+                img.src = img.getAttribute('data-src');
+                // 每张图片只需要观察一次 观察完毕后取消观察 
+                obSever.unobserve(img);
+            }
+        })
+    }
+
+
+    let obSever = new IntersectionObserver(callback)
+    lazyImg.forEach(image => {
+        obSever.observe(image)
+    })
+</script>
+
+</html>
