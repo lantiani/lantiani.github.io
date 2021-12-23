@@ -1,0 +1,577 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.page {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.flex_c_c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex_c_a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hide {
+  display: none;
+}
+
+.headerBorBtm {
+  border-bottom: 0.04rem solid #ccc;
+}
+
+.yl_box {
+  width: 100%;
+}
+
+header {
+  background: -webkit-gradient(linear, left top, right top, from(#7b72e9), to(#1b9af7));
+  background: linear-gradient(to right, #7b72e9, #1b9af7);
+  color: #fff;
+  padding: 0.2rem 0;
+}
+
+header .yl_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: -webkit-gradient(linear, left top, right top, from(#7b72e9), to(#1b9af7));
+  background: linear-gradient(to right, #7b72e9, #1b9af7);
+  height: 1.2rem;
+}
+
+header .yl_header .headerLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .yl_header .headerLeft img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+header .yl_header .headerLeft .software {
+  margin-left: -0.3rem;
+  text-align: center;
+}
+
+header .yl_header .headerLeft .software p {
+  font-size: 0.6rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 0.06rem;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+header .yl_header .headerLeft .software span {
+  display: block;
+  line-height: 1;
+  font-size: 0.48rem;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+header .yl_header .headerRight {
+  position: relative;
+}
+
+header .yl_header .headerRight input {
+  height: 0.9rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0;
+  font-size: 0.4rem;
+}
+
+header .yl_header .headerRight input[type=button] {
+  line-height: 0.5rem;
+}
+
+header .yl_header .headerRight .circle {
+  width: 0.84rem;
+  height: 0.84rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -1.4rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+header .yl_header .headerRight .circle img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header .yl_header .headerRight .yl_more {
+  width: 1rem;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+  background-color: #2396f5;
+}
+
+header .yl_header .headerRight .yl_more i {
+  font-size: 0.6rem;
+  color: #fff;
+}
+
+nav {
+  width: 100vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #1b9af7;
+  z-index: 99;
+}
+
+nav .yl_nav {
+  height: 100%;
+  background-color: #1b9af7;
+}
+
+nav .yl_nav li {
+  line-height: 1rem;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 0.44rem;
+}
+
+nav .yl_nav li a {
+  display: inline-block;
+  color: #fff;
+  width: 100%;
+  text-decoration: none;
+}
+
+nav .yl_nav li:last-child {
+  -webkit-box-flex: 1.3;
+      -ms-flex: 1.3;
+          flex: 1.3;
+}
+
+.yl_enroll {
+  display: none;
+}
+
+.yl_entry {
+  display: none;
+}
+
+.yl_login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999999;
+  width: 8rem;
+  height: 10.2rem;
+  padding: 0 0.2rem;
+  background-color: rgba(255, 255, 255, 0.884);
+  color: #8bc220;
+  display: none;
+}
+
+.yl_login .return {
+  display: inline-block;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  position: absolute;
+  font-size: 0.4rem;
+  top: 0.2rem;
+  left: 0.2rem;
+  cursor: pointer;
+}
+
+.yl_login .close {
+  display: inline-block;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  position: absolute;
+  font-size: 0.4rem;
+  top: 0.2rem;
+  right: 0.2rem;
+  cursor: pointer;
+}
+
+.yl_login p {
+  width: 100%;
+  text-align: center;
+  font-size: 0.52rem;
+  margin: 0.6rem 0 0rem;
+}
+
+.yl_login .userInput {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 7.2rem;
+  height: 1rem;
+  margin: 0.4rem auto;
+  border-bottom: 0.02rem solid #ccc;
+}
+
+.yl_login .userInput .span {
+  display: inline-block;
+  line-height: 1rem;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  color: #8bc220;
+}
+
+.yl_login .userInput .span i {
+  font-size: 0.48rem;
+}
+
+.yl_login .userInput input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 1.25rem;
+  border: 0;
+  background-color: #5087da00;
+  font-size: 0.48rem;
+  -webkit-transform: scale(0.8) translateX(-12%);
+          transform: scale(0.8) translateX(-12%);
+  padding: 0 0.2rem;
+}
+
+.yl_login .userInput ::-webkit-input-placeholder {
+  color: #8bc220;
+  font-size: 0.48rem;
+  -webkit-transform: scale(0.8) translateX(-12%);
+          transform: scale(0.8) translateX(-12%);
+}
+
+.yl_login .userInput .commonEyes {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 0.4rem;
+  cursor: pointer;
+}
+
+.yl_login .userInput .eyesOpen {
+  display: none;
+}
+
+.yl_login .userInput .eyesOpen1 {
+  display: none;
+}
+
+.yl_login .userInput .eyesOpen2 {
+  display: none;
+}
+
+.yl_login .proving input {
+  width: 4rem;
+}
+
+.yl_login .proving .validation {
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 0.98rem;
+  text-align: center;
+  vertical-align: middle;
+  color: #333;
+  cursor: pointer;
+}
+
+.yl_login .proving .validation .proving {
+  display: inline-block;
+  font-size: 0.8rem;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.yl_login .btnBox button {
+  width: 3.1rem;
+  padding: 0 0.4rem;
+  line-height: 1;
+  height: 1rem;
+  border-top: 0.02rem solid #efffd0;
+  background-color: rgba(0, 0, 0, 0);
+  color: #8bc220;
+  font-size: 0.4rem;
+}
+
+.yl_login .btnBox button span {
+  display: inline-block;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.yl_login .loginWrap {
+  width: 100%;
+  height: 3.2rem;
+  margin-top: 0.5rem;
+}
+
+.yl_login .loginWrap .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.yl_login .loginWrap .top span {
+  display: inline-block;
+  padding: 0.2rem 0;
+  cursor: pointer;
+  font-size: 0.48rem;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.yl_login .loginWrap .top .check {
+  display: none;
+}
+
+.yl_login .loginWrap .top .loaded {
+  display: inline-block;
+  -webkit-animation: rotated .5s linear 0s 1;
+          animation: rotated .5s linear 0s 1;
+}
+
+@-webkit-keyframes rotated {
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotated {
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.yl_login .loginWrap .main {
+  width: 100%;
+  height: 3rem;
+  padding: 0.2rem 0.2rem 0;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.yl_login .loginWrap .main div {
+  text-align: center;
+  font-size: 0.4rem;
+  margin: 0.2rem 0;
+  line-height: 2;
+}
+
+.yl_login .loginWrap .main span {
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-size: 0.44rem;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 2;
+}
+
+.yl_login .loginWrap .main p {
+  display: none;
+  margin: 0;
+  height: 0;
+  font-size: 0.4rem;
+  background-color: #000;
+}
+
+.yl_cover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.678);
+  z-index: 100;
+  display: none;
+}
+
+.yl_alert {
+  width: 8rem;
+  height: 6rem;
+  z-index: 99999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: red;
+  background-color: #fff;
+  text-align: center;
+  display: none;
+}
+
+.yl_alert p {
+  height: 3rem;
+  padding: 0.6rem 0 0;
+}
+
+.yl_alert p i {
+  font-size: 2rem;
+}
+
+.yl_alert .title {
+  margin: 0.2rem 0 0.6rem;
+  font-size: 0.4rem;
+}
+
+.yl_alert .alertBtn button {
+  width: 2.6rem;
+  height: 0.8rem;
+  line-height: 1;
+  padding: 0;
+  font-size: 0.4rem;
+}
+
+.swiperBox {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  width: 1000%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 0.36rem;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 0.8rem;
+  color: #fff;
+}
+/*# sourceMappingURL=index.css.map */
